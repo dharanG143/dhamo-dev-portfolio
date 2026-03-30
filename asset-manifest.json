@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dhamo-dev-portfolio/static/css/main.7f8aac8c.css",
+    "main.js": "/dhamo-dev-portfolio/static/js/main.c40f0837.js",
+    "static/js/453.635f5f07.chunk.js": "/dhamo-dev-portfolio/static/js/453.635f5f07.chunk.js",
+    "index.html": "/dhamo-dev-portfolio/index.html",
+    "main.7f8aac8c.css.map": "/dhamo-dev-portfolio/static/css/main.7f8aac8c.css.map",
+    "main.c40f0837.js.map": "/dhamo-dev-portfolio/static/js/main.c40f0837.js.map",
+    "453.635f5f07.chunk.js.map": "/dhamo-dev-portfolio/static/js/453.635f5f07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f8aac8c.css",
+    "static/js/main.c40f0837.js"
+  ]
+}
