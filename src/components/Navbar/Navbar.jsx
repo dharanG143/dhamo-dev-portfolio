@@ -33,7 +33,7 @@ export const Navbar = () => {
             className="cursor-pointer"
           >
             <a href="#home" className="gradient-text font-bold text-2xl">
-              {portfolioData.name.split('')[0]}D
+              {portfolioData.name.charAt(0)}D
             </a>
           </motion.div>
 

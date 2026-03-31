@@ -1,3 +1,7 @@
+import employeeImg from '../assets/employee.jpg';
+import parkingImg from '../assets/parking.jpg';
+import billingImg from '../assets/billing.png';
+
 // Portfolio data
 export const portfolioData = {
   name: "Dhamodharan B",
@@ -83,7 +87,7 @@ export const portfolioData = {
       title: "Employee Management System",
       type: "Full Stack",
       description: "A real-time web application for managing employee data, salary, and records. Built using React.js frontend, Node.js backend, and MySQL database.",
-      image: "https://via.placeholder.com/400x250?text=Employee+Management",
+      image: employeeImg,
       technologies: ["React.js", "Node.js", "Express.js", "MySQL", "Axios"],
       features: [
         "Employee CRUD operations",
@@ -99,7 +103,7 @@ export const portfolioData = {
       title: "Smart Parking System",
       type: "Frontend",
       description: "Frontend application for parking slot management with real-time UI updates and API integration.",
-      image: "https://via.placeholder.com/400x250?text=Smart+Parking",
+      image: parkingImg,
       technologies: ["React.js", "CSS", "Axios"],
       features: [
         "Parking slot UI display",
@@ -114,7 +118,7 @@ export const portfolioData = {
       title: "Electricity Billing System",
       type: "Java Project",
       description: "Desktop application developed using Java for managing electricity billing operations.",
-      image: "https://via.placeholder.com/400x250?text=Electricity+Billing",
+      image: billingImg,
       technologies: ["Java", "MySQL"],
       features: [
         "Customer management",

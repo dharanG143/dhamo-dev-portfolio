@@ -46,7 +46,7 @@ export const Footer = () => {
             {/* Brand */}
             <motion.div variants={itemVariants}>
               <h3 className="gradient-text font-bold text-2xl mb-4">
-                {portfolioData.name.split('')[0]}D
+                {portfolioData.name.charAt(0)}D
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Building beautiful and functional web experiences with modern technologies.
