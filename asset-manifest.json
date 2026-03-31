@@ -1,18 +1,16 @@
 {
   "files": {
     "main.css": "/dhamo-dev-portfolio/static/css/main.7f8aac8c.css",
-    "main.js": "/dhamo-dev-portfolio/static/js/main.aa15f680.js",
-    "static/js/453.635f5f07.chunk.js": "/dhamo-dev-portfolio/static/js/453.635f5f07.chunk.js",
+    "main.js": "/dhamo-dev-portfolio/static/js/main.6541dc11.js",
     "static/media/billing.png": "/dhamo-dev-portfolio/static/media/billing.4ce0e33d8ca20a8f7014.png",
     "static/media/employee.jpg": "/dhamo-dev-portfolio/static/media/employee.9f2a67b5c796fd55f998.jpg",
     "static/media/parking.jpg": "/dhamo-dev-portfolio/static/media/parking.75badda534bfaa342fc4.jpg",
     "index.html": "/dhamo-dev-portfolio/index.html",
     "main.7f8aac8c.css.map": "/dhamo-dev-portfolio/static/css/main.7f8aac8c.css.map",
-    "main.aa15f680.js.map": "/dhamo-dev-portfolio/static/js/main.aa15f680.js.map",
-    "453.635f5f07.chunk.js.map": "/dhamo-dev-portfolio/static/js/453.635f5f07.chunk.js.map"
+    "main.6541dc11.js.map": "/dhamo-dev-portfolio/static/js/main.6541dc11.js.map"
   },
   "entrypoints": [
     "static/css/main.7f8aac8c.css",
-    "static/js/main.aa15f680.js"
+    "static/js/main.6541dc11.js"
   ]
 }
