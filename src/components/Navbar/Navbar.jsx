@@ -23,7 +23,7 @@ export const Navbar = () => {
       initial="hidden"
       animate="visible"
       variants={navVariants}
-      className="fixed top-0 left-0 right-0 z-40 glass-effect backdrop-blur-xl border-b border-white/10"
+      className="fixed top-0 left-0 right-0 z-40 glass-effect backdrop-blur-xl border-b border-gray-200 dark:border-white/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -45,7 +45,7 @@ export const Navbar = () => {
                 href={link.href}
                 variants={itemVariants}
                 transition={{ delay: index * 0.1 }}
-                className="text-gray-300 hover:text-blue-400 transition-colors duration-300 relative group"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 relative group"
               >
                 {link.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
@@ -77,7 +77,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden pb-4 border-t border-white/10"
+            className="md:hidden pb-4 border-t border-gray-200 dark:border-white/10"
           >
             {navigationLinks.map((link, index) => (
               <motion.a
@@ -86,7 +86,7 @@ export const Navbar = () => {
                 variants={itemVariants}
                 transition={{ delay: index * 0.05 }}
                 onClick={() => setIsOpen(false)}
-                className="block py-3 px-4 text-gray-300 hover:text-blue-400 hover:bg-white/5 rounded-lg transition-colors"
+                className="block py-3 px-4 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-white/5 rounded-lg transition-colors"
               >
                 {link.name}
               </motion.a>

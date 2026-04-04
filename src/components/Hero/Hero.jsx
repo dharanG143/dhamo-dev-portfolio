@@ -27,7 +27,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-to-br from-dark via-darker to-dark pt-20 overflow-hidden relative"
+      className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-dark dark:via-darker dark:to-dark pt-20 overflow-hidden relative"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -61,14 +61,14 @@ export const Hero = () => {
             </motion.h1>
 
             {/* Role */}
-            <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl text-gray-400 mb-6">
+            <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 mb-6">
               {portfolioData.role}
             </motion.h2>
 
             {/* Bio */}
             <motion.p
               variants={itemVariants}
-              className="text-lg text-gray-300 mb-8 leading-relaxed max-w-lg"
+              className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-lg"
             >
               {portfolioData.bio}
             </motion.p>
@@ -110,7 +110,7 @@ export const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, y: -5 }}
-                  className="text-2xl text-gray-400 hover:text-blue-400 transition-colors duration-300"
+                  className="text-2xl text-gray-700 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   <social.icon />
                 </motion.a>
@@ -134,15 +134,15 @@ export const Hero = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-0 rounded-full border-2 border-transparent border-t-blue-400 border-r-purple-400"
+                className="absolute inset-0 rounded-full border-2 border-transparent border-t-blue-500 dark:border-t-blue-300 border-r-purple-500 dark:border-r-purple-300"
               ></motion.div>
 
               {/* Inner Circle with Gradient */}
-              <div className="absolute inset-8 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 glass-effect flex items-center justify-center">
+              <div className="absolute inset-8 rounded-full bg-gradient-to-br from-blue-400/30 to-purple-400/30 dark:from-blue-400/30 dark:to-purple-400/30 border border-blue-300/20 dark:border-blue-300/20 flex items-center justify-center">
                 <motion.div
                   animate={{ rotate: -360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                  className="text-6xl"
+                  className="text-6xl rounded-full flex items-center justify-center w-full h-full"
                 >
                   💻
                 </motion.div>
@@ -161,7 +161,7 @@ export const Hero = () => {
                   className="absolute inset-0"
                 >
                   <div
-                    className="absolute w-12 h-12 rounded-full bg-blue-500/20 border border-blue-400 flex items-center justify-center text-sm font-bold text-blue-300"
+                    className="absolute w-12 h-12 rounded-full bg-blue-400/40 dark:bg-blue-400/50 border border-blue-500 dark:border-blue-300 flex items-center justify-center text-sm font-bold text-blue-700 dark:text-blue-200"
                     style={{
                       top: '0%',
                       left: '50%',
@@ -184,7 +184,7 @@ export const Hero = () => {
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
       >
         <div className="flex flex-col items-center gap-2">
-          <span className="text-sm text-gray-400">Scroll to explore</span>
+          <span className="text-sm text-gray-600 dark:text-gray-400">Scroll to explore</span>
           <div className="border-2 border-blue-400 rounded-full p-2">
             <div className="w-1 h-3 bg-blue-400 rounded-full animate-pulse"></div>
           </div>

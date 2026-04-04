@@ -14,7 +14,7 @@ import { DarkModeToggle } from './components/common/DarkModeToggle';
 
 // Home Page Component
 const HomePage = () => (
-  <div className="bg-dark text-white overflow-hidden">
+  <div className="overflow-hidden">
     <DarkModeToggle />
     <Navbar />
     <Hero />

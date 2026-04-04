@@ -1,6 +1,5 @@
 import employeeImg from '../assets/employee.jpg';
 import parkingImg from '../assets/parking.jpg';
-import billingImg from '../assets/billing.png';
 
 // Portfolio data
 export const portfolioData = {
@@ -20,7 +19,7 @@ export const portfolioData = {
     },
     { 
       name: "LinkedIn", 
-      url: "https://www.linkedin.com/in/dhamo143", 
+      url: "https://www.linkedin.com/in/dhamo-dev", 
       icon: "FaLinkedin" 
     },
     { 
@@ -33,19 +32,45 @@ export const portfolioData = {
   skills: [
     { 
       category: "Frontend", 
-      items: ["React.js", "JavaScript", "HTML", "CSS", "Tailwind CSS"] 
+      description: "Building responsive user interfaces with React, JavaScript, HTML, and modern CSS.",
+      items: [
+        { name: "React.js", description: "Component-based UI library for building interactive web applications" },
+        { name: "JavaScript", description: "Programming language for web development and dynamic content" },
+        { name: "HTML", description: "Markup language for structuring web content" },
+        { name: "CSS", description: "Styling language for designing web layouts and appearances" },
+        { name: "Tailwind CSS", description: "Utility-first CSS framework for rapid UI development" }
+      ]
     },
     { 
       category: "Backend", 
-      items: ["Node.js", "Express.js", "MySQL"] 
+      description: "Creating REST APIs, server logic, and database integrations with Node.js, Express, and MySQL.",
+      items: [
+        { name: "Node.js", description: "JavaScript runtime for server-side development" },
+        { name: "Express.js", description: "Web framework for Node.js to build APIs and web applications" },
+        { name: "MySQL", description: "Relational database management system for data storage" },
+        { name: "REST APIs", description: "Architectural style for designing networked applications" }
+      ]
     },
     { 
       category: "Tools", 
-      items: ["Git", "GitHub", "VS Code", "Postman"] 
+      description: "Using essential developer tools for version control, debugging, and API testing.",
+      items: [
+        { name: "Git", description: "Version control system for tracking code changes" },
+        { name: "GitHub", description: "Platform for hosting and collaborating on Git repositories" },
+        { name: "VS Code", description: "Code editor with built-in debugging and extension support" },
+        { name: "Postman", description: "API testing tool for developing and testing APIs" },
+        { name: "Chrome DevTools", description: "Web development tools built into Google Chrome browser" }
+      ]
     },
     { 
       category: "Soft Skills", 
-      items: ["Problem Solving", "Team Collaboration", "Communication"] 
+      description: "Strong communication, teamwork, and problem solving for effective project delivery.",
+      items: [
+        { name: "Problem Solving", description: "Ability to analyze issues and develop effective solutions" },
+        { name: "Team Collaboration", description: "Working effectively with others towards common goals" },
+        { name: "Communication", description: "Clear expression of ideas and active listening skills" },
+        { name: "Time Management", description: "Organizing and prioritizing tasks efficiently" }
+      ]
     },
   ],
 
@@ -112,21 +137,6 @@ export const portfolioData = {
       ],
       liveLink: "#",
       githubLink: "https://github.com/dharanG143",
-    },
-    {
-      id: 3,
-      title: "Electricity Billing System",
-      type: "Java Project",
-      description: "Desktop application developed using Java for managing electricity billing operations.",
-      image: billingImg,
-      technologies: ["Java", "MySQL"],
-      features: [
-        "Customer management",
-        "Bill generation",
-        "Payment tracking"
-      ],
-      liveLink: "#",
-      githubLink: "#",
     },
   ],
 

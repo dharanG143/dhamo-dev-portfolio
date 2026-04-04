@@ -27,7 +27,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-darker border-t border-white/10 relative overflow-hidden">
+    <footer className="bg-gray-100 dark:bg-darker border-t border-gray-200 dark:border-white/10 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-96 h-96 bg-blue-600/5 rounded-full blur-3xl top-0 left-1/2 -translate-x-1/2"></div>
@@ -48,21 +48,21 @@ export const Footer = () => {
               <h3 className="gradient-text font-bold text-2xl mb-4">
                 {portfolioData.name.charAt(0)}D
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                 Building beautiful and functional web experiences with modern technologies.
               </p>
             </motion.div>
 
             {/* Navigation Links */}
             <motion.div variants={itemVariants}>
-              <h4 className="font-semibold text-white mb-4">Navigation</h4>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Navigation</h4>
               <ul className="space-y-2">
                 {['Home', 'About', 'Skills', 'Projects', 'Contact'].map(
                   (link, index) => (
                     <li key={index}>
                       <a
                         href={`#${link.toLowerCase()}`}
-                        className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                        className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm"
                       >
                         {link}
                       </a>
@@ -74,7 +74,7 @@ export const Footer = () => {
 
             {/* Resources */}
             <motion.div variants={itemVariants}>
-              <h4 className="font-semibold text-white mb-4">Resources</h4>
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Resources</h4>
               <ul className="space-y-2">
                 {[
                   { label: 'Resume', link: portfolioData.resumeLink },
@@ -86,7 +86,7 @@ export const Footer = () => {
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                      className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm"
                     >
                       {item.label}
                     </a>
@@ -97,8 +97,8 @@ export const Footer = () => {
 
             {/* CTA */}
             <motion.div variants={itemVariants}>
-              <h4 className="font-semibold text-white mb-4">Let's Connect</h4>
-              <p className="text-gray-400 text-sm mb-4">
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Let's Connect</h4>
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
                 Ready to start your next project? Let's talk!
               </p>
               <motion.a
@@ -112,7 +112,7 @@ export const Footer = () => {
           </div>
 
           {/* Divider */}
-          <div className="border-t border-white/10 py-8">
+          <div className="border-t border-gray-200 dark:border-white/10 py-8">>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* Left - Social Links */}
               <motion.div
@@ -126,7 +126,7 @@ export const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.2, y: -5 }}
-                    className="w-10 h-10 rounded-lg glass-effect flex items-center justify-center text-gray-400 hover:text-blue-400 border border-white/10 hover:border-blue-400 transition-all"
+                    className="w-10 h-10 rounded-lg glass-effect flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-200 dark:border-white/10 hover:border-blue-400 transition-all"
                     aria-label={social.label}
                   >
                     <social.icon size={20} />
@@ -137,7 +137,7 @@ export const Footer = () => {
               {/* Right - Copyright */}
               <motion.div
                 variants={itemVariants}
-                className="text-center md:text-right text-sm text-gray-400"
+                className="text-center md:text-right text-sm text-gray-600 dark:text-gray-400"
               >
                 <p>
                   © {currentYear} {portfolioData.name}. Made with{' '}

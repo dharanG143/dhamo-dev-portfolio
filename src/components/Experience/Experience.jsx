@@ -19,7 +19,7 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen bg-gradient-to-br from-dark via-darker to-dark py-20 relative overflow-hidden"
+      className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-dark dark:via-darker dark:to-dark py-20 relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -37,7 +37,7 @@ export const Experience = () => {
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="section-title">Experience</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mt-4"></div>
-            <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
               My professional journey and key milestones
             </p>
           </motion.div>
@@ -80,7 +80,7 @@ export const Experience = () => {
                   <div className={index % 2 === 0 ? '' : 'md:order-first'}>
                     <motion.div
                       whileHover={{ y: -5 }}
-                      className="p-8 rounded-xl glass-effect border border-white/10 hover:border-blue-400/30 transition-all group"
+                      className="p-8 rounded-xl glass-effect border border-gray-200 dark:border-white/10 hover:border-blue-400/30 transition-all group"
                     >
                       {/* Right Side - Odd */}
                       {index % 2 !== 0 && (
@@ -89,14 +89,14 @@ export const Experience = () => {
                         </span>
                       )}
 
-                      <h3 className="text-2xl font-bold text-white mt-3 mb-2 group-hover:text-blue-300 transition-colors">
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-3 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors">
                         {exp.title}
                       </h3>
-                      <p className="text-purple-300 font-semibold mb-4">
+                      <p className="text-purple-600 dark:text-purple-300 font-semibold mb-4">
                         {exp.company}
                       </p>
 
-                      <p className="text-gray-400 mb-4 leading-relaxed">
+                      <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
                         {exp.description}
                       </p>
 
@@ -109,7 +109,7 @@ export const Experience = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="text-sm text-gray-300 flex items-start gap-2"
+                            className="text-sm text-gray-600 dark:text-gray-300 flex items-start gap-2"
                           >
                             <span className="text-blue-400 mt-1">▸</span>
                             <span>{highlight}</span>
@@ -131,7 +131,7 @@ export const Experience = () => {
             transition={{ delay: 0.5 }}
             className="text-center mt-16"
           >
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-600 dark:text-gray-400 mb-6">
               Looking for a dedicated Frontend Developer?
             </p>
             <motion.a

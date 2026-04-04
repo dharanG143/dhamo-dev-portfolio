@@ -14,8 +14,10 @@ export const useDarkMode = () => {
     localStorage.setItem('darkMode', JSON.stringify(isDark));
     
     if (isDark) {
+      document.documentElement.classList.remove('light');
       document.documentElement.classList.add('dark');
     } else {
+      document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
     }
   }, [isDark]);
@@ -24,3 +26,4 @@ export const useDarkMode = () => {
 
   return { isDark, toggleDarkMode };
 };
+

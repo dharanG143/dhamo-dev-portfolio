@@ -19,7 +19,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen bg-gradient-to-br from-dark via-darker to-dark py-20 overflow-hidden relative"
+      className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-dark dark:via-darker dark:to-dark py-20 overflow-hidden relative"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -43,7 +43,7 @@ export const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left - Text */}
             <motion.div variants={itemVariants} className="space-y-6">
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 {portfolioData.aboutText}
               </p>
 
@@ -54,21 +54,21 @@ export const About = () => {
                   className="text-center p-4 rounded-lg glass-effect"
                 >
                   <div className="text-3xl font-bold text-blue-400">10+</div>
-                  <div className="text-sm text-gray-400 mt-2">Projects</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400 mt-2">Projects</div>
                 </motion.div>
                 <motion.div
                   whileHover={{ y: -5 }}
                   className="text-center p-4 rounded-lg glass-effect"
                 >
-                  <div className="text-3xl font-bold text-purple-400">2+</div>
-                  <div className="text-sm text-gray-400 mt-2">Years</div>
+                  <div className="text-3xl font-bold text-purple-400">6+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400 mt-2">Months</div>
                 </motion.div>
                 <motion.div
                   whileHover={{ y: -5 }}
                   className="text-center p-4 rounded-lg glass-effect"
                 >
                   <div className="text-3xl font-bold text-pink-400">∞</div>
-                  <div className="text-sm text-gray-400 mt-2">Learning</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400 mt-2">Learning</div>
                 </motion.div>
               </div>
             </motion.div>
@@ -103,15 +103,15 @@ export const About = () => {
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05, y: -10 }}
-                  className="p-6 rounded-xl glass-effect border border-white/10 hover:border-blue-400/30 transition-all duration-300 group"
+                  className="p-6 rounded-xl glass-effect border border-gray-200 dark:border-white/10 hover:border-blue-400/30 transition-all duration-300 group"
                 >
                   <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
                     {item.icon}
                   </div>
-                  <h3 className="font-bold text-lg mb-2 text-blue-300">
+                  <h3 className="font-bold text-lg mb-2 text-blue-600 dark:text-blue-300">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-400">{item.desc}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{item.desc}</p>
                 </motion.div>
               ))}
             </motion.div>
