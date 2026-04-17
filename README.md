@@ -1,24 +1,34 @@
-# dhamo-dev-portfolio
+# 🚀 Dhamodharan Portfolio
 
-My personal developer portfolio built with React.js showcasing projects and skills.
+A modern and responsive **personal developer portfolio** built using React.js to showcase my projects, skills, and experience.
 
-## 🚀 Features
+## 🌐 Live Demo
 
-- Responsive design with Tailwind CSS
-- Dark mode support
-- Smooth animations with Framer Motion
-- Project showcase and filtering
-- Experience and skills section
-- Resume download
-- Social media links
-- Contact information
+👉 https://dhamo-dev-portfolio.vercel.app
+
+---
+
+## ✨ Features
+
+* 🎨 Fully responsive design (Mobile + Desktop)
+* 🌙 Dark mode support
+* ⚡ Smooth animations using Framer Motion
+* 🧠 Skills section with dynamic categories
+* 📂 Project showcase with filtering
+* 📄 Resume download option
+* 🔗 Social media integration
+* 📩 Contact information section
+
+---
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS
-- **Animations**: Framer Motion
-- **Icons**: React Icons
-- **Deployment**: GitHub Pages
+* **Frontend**: React.js, Tailwind CSS
+* **Animations**: Framer Motion
+* **Icons**: React Icons
+* **Deployment**: Vercel
+
+---
 
 ## 📦 Installation
 
@@ -26,22 +36,43 @@ My personal developer portfolio built with React.js showcasing projects and skil
 npm install
 ```
 
-## 🏃 Running Locally
+---
+
+## 🏃 Run Locally
 
 ```bash
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view in your browser.
+Open http://localhost:3000 to view it in your browser.
+
+---
 
 ## 🚀 Deployment
 
-Deploy to GitHub Pages:
+This project is deployed using **Vercel**.
+Every push to the `main` branch triggers automatic deployment.
 
-```bash
-npm run deploy
-```
+---
+
+## 📌 Highlights
+
+* Clean and modern UI design
+* Optimized performance
+* Scalable component structure
+* Production-ready deployment
+
+---
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
+This project is open-source and available under the MIT License.
+
+---
+
+## 🙋‍♂️ Author
+
+**Dhamodharan**
+Frontend Developer | React Enthusiast
+
+---

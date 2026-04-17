@@ -447,7 +447,7 @@ CERTIFICATIONS & ACHIEVEMENTS
             <motion.div variants={itemVariants} className="text-center border-b border-gray-200 dark:border-white/10 pb-8 print:border-black">
               <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2 print:text-black">DHAMODHARAN B</h1>
               <h2 className="text-xl text-blue-400 mb-4 print:text-blue-600">React / Full Stack Developer</h2>
-              <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600 dark:text-gray-300 print:text-black">
+              <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300 print:text-black">
                 <span>📧 dhamodharan13072003@gmail.com</span>
                 <span>📱 +91-8608183354</span>
                 <span>💼 linkedin.com/in/dhamo-dev</span>
@@ -458,15 +458,15 @@ CERTIFICATIONS & ACHIEVEMENTS
 
             {/* Summary */}
             <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-bold text-blue-600 dark:text-blue-300 mb-3 print:text-blue-700">SUMMARY</h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed print:text-black">
+              <h3 className="text-xl font-bold text-blue-300 mb-3 print:text-blue-700">SUMMARY</h3>
+              <p className="text-gray-300 leading-relaxed print:text-black">
                 Junior Full Stack Developer with hands-on experience in React.js, Node.js, and MySQL. Currently working at LCS Solution on real-time applications including Employee Management System. Skilled in API integration, frontend development, and backend services.
               </p>
             </motion.div>
 
             {/* Experience */}
             <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-bold text-blue-600 dark:text-blue-300 mb-4 print:text-blue-700">EXPERIENCE</h3>
+              <h3 className="text-xl font-bold text-blue-300 mb-4 print:text-blue-700">EXPERIENCE</h3>
               <div className="space-y-6">
                 {[
                   {
@@ -498,15 +498,15 @@ CERTIFICATIONS & ACHIEVEMENTS
                     ]
                   }
                 ].map((exp, idx) => (
-                  <div key={idx} className="border-l-2 border-blue-600 dark:border-blue-400 pl-4">
+                  <div key={idx} className="border-l-2 border-blue-400 pl-4">
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <h4 className="font-bold text-gray-900 dark:text-white print:text-black">{exp.title}</h4>
-                        <p className="text-blue-600 dark:text-blue-400 print:text-blue-600">{exp.company}</p>
+                        <p className="text-blue-400 print:text-blue-600">{exp.company}</p>
                       </div>
-                      <span className="text-sm text-gray-600 dark:text-gray-400 print:text-black">{exp.duration}</span>
+                      <span className="text-sm text-gray-400 print:text-black">{exp.duration}</span>
                     </div>
-                    <ul className="text-gray-600 dark:text-gray-300 text-sm space-y-1 print:text-black">
+                    <ul className="text-gray-300 text-sm space-y-1 print:text-black">
                       {exp.highlights.map((highlight, i) => (
                         <li key={i}>• {highlight}</li>
                       ))}
@@ -518,7 +518,7 @@ CERTIFICATIONS & ACHIEVEMENTS
 
             {/* Projects */}
             <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-bold text-blue-600 dark:text-blue-300 mb-4 print:text-blue-700">PROJECTS</h3>
+              <h3 className="text-xl font-bold text-blue-300 mb-4 print:text-blue-700">PROJECTS</h3>
               <div className="space-y-6">
                 {[
                   {
@@ -542,11 +542,11 @@ CERTIFICATIONS & ACHIEVEMENTS
                     ]
                   }
                 ].map((proj, idx) => (
-                  <div key={idx} className="border-b border-gray-200 dark:border-white/10 pb-4 last:border-0 print:border-black print:last:border-0">>
+                  <div key={idx} className="border-b border-gray-200 dark:border-white/10 pb-4 last:border-0 print:border-black print:last:border-0">
                     <div>
                       <h4 className="font-bold text-gray-900 dark:text-white print:text-black">{proj.title}</h4>
                       <p className="text-blue-400 text-sm mb-2 print:text-blue-600">Technologies: {proj.tech}</p>
-                      <ul className="text-gray-600 dark:text-gray-300 text-sm space-y-1 print:text-black">
+                      <ul className="text-gray-300 text-sm space-y-1 print:text-black">
                         {proj.highlights.map((highlight, i) => (
                           <li key={i}>• {highlight}</li>
                         ))}
@@ -559,7 +559,7 @@ CERTIFICATIONS & ACHIEVEMENTS
 
             {/* Skills */}
             <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-bold text-blue-600 dark:text-blue-300 mb-4 print:text-blue-700">SKILLS</h3>
+              <h3 className="text-xl font-bold text-blue-300 mb-4 print:text-blue-700">SKILLS</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
                   { category: 'Frontend', skills: 'HTML, CSS, JavaScript, React.js, Tailwind CSS' },
@@ -569,7 +569,7 @@ CERTIFICATIONS & ACHIEVEMENTS
                 ].map((skillGroup, idx) => (
                   <div key={idx}>
                     <h4 className="font-bold text-blue-400 mb-2 print:text-blue-600">{skillGroup.category}</h4>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm print:text-black">{skillGroup.skills}</p>
+                    <p className="text-gray-300 text-sm print:text-black">{skillGroup.skills}</p>
                   </div>
                 ))}
               </div>
@@ -577,11 +577,11 @@ CERTIFICATIONS & ACHIEVEMENTS
 
             {/* Education */}
             <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-bold text-blue-600 dark:text-blue-300 mb-4 print:text-blue-700">EDUCATION</h3>
+              <h3 className="text-xl font-bold text-blue-300 mb-4 print:text-blue-700">EDUCATION</h3>
               <div className="border-l-2 border-blue-400 pl-4">
                 <h4 className="font-bold text-gray-900 dark:text-white print:text-black">Bachelor of Science in Electronics</h4>
                 <p className="text-blue-400 print:text-blue-600">Bharathidasan University</p>
-                <div className="flex justify-between text-sm text-gray-600 dark:text-gray-300 print:text-black mt-1">
+                <div className="flex justify-between text-sm text-gray-300 print:text-black mt-1">
                   <span>2021 – 2024</span>
                   <span>GPA: 75%</span>
                 </div>
